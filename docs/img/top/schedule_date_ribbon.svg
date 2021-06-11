@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg viewBox="0 0 120 32" style="background-color:#ffffff00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px" width="120px" height="32px">
+	<g id="Layer%201">
+		<path d="M 0 1.7 L 0 30.3 C 0 31.2 0.8 32 1.7 32 L 118.9 32 C 119.3 32 119.7 31.8 119.9 31.5 C 120 31.3 120 31.1 120 30.9 C 120 30.8 120 30.6 119.9 30.4 L 113.4 19.3 C 112.8 18.3 112.5 17.1 112.5 16 C 112.5 14.9 112.8 13.7 113.4 12.7 L 119.8 1.7 L 119.9 1.6 C 120 1.4 120 1.2 120 1.1 C 120 0.9 120 0.7 119.9 0.5 C 119.7 0.2 119.3 0 118.9 0 L 1.7 0 C 0.8 0 0 0.8 0 1.7 Z" fill="#27894f"/>
+	</g>
+</svg>
