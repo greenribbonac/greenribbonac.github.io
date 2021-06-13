@@ -1,0 +1,19 @@
+{
+  "name": "greenribbonac.github.io",
+  "version": "1.0.0",
+  "description": "source of https://www.greenribbonac.com",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx serve docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenribbonac/greenribbonac.github.io.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/greenribbonac/greenribbonac.github.io/issues"
+  },
+  "homepage": "https://www.greenribbonac.com"
+}
