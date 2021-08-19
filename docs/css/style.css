@@ -773,6 +773,11 @@ common parts
   margin-top: 10px;
 }
 
+.shcedule__note a {
+  color: #009044;
+  text-decoration: underline;
+}
+
 .bkg--white_dots{
   background: url(../img/common/bkg_dots_white.png) repeat top left;
     padding: 130px 0;
