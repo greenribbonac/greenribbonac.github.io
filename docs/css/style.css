@@ -1841,6 +1841,22 @@ activities
   vertical-align: middle;
 }
 
+.activities-intro .activities__subheader {
+  margin-top: 2.5rem;
+  color: #009044;
+  font-size: 1.6rem;
+}
+
+.activities-intro .activities__report {
+  color: #009044;
+  margin-left: 0.8rem;
+}
+
+.activities-intro .activities__report a {
+  color: #009044;
+  text-decoration: underline;
+}
+
 .activities-intro .activities__txt,
 .activities-other .other__txt{
   line-height: 2.5;
