@@ -1807,6 +1807,14 @@ about
   }
 }
 
+.about-overview .business-report h1 {
+  font-size: 1.2em;
+}
+
+.about-overview .business-report ul {
+  padding: 0.5em 0;
+}
+
 /*////////////////////////
 
 activities
