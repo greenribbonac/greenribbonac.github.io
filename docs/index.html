@@ -249,6 +249,7 @@
             <p class="copyright ft-10"><b>© グリーンリボン推進協会 ALL RIGHTS RESERVED.</b></p>
         </div><!-- container-s -->
     </footer>
+    <script type="module" src="/js/firebase-init.mjs"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/modal-video@2.4.2/js/jquery-modal-video.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
@@ -268,23 +269,6 @@
                 },
             });
         }
-    </script>
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
-        import { getPerformance } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-performance.js";
-        const firebaseConfig = {
-            apiKey: "AIzaSyAwfln0z2E_SZAUlCmHgS9Fkai1Y-D_iSc",
-            authDomain: "greenribbonac-f7379.firebaseapp.com",
-            projectId: "greenribbonac-f7379",
-            storageBucket: "greenribbonac-f7379.appspot.com",
-            messagingSenderId: "684664639900",
-            appId: "1:684664639900:web:e684f3d10006a0e023b859",
-            measurementId: "G-XNHZMGJ3N6"
-
-        };
-
-        const app = initializeApp(firebaseConfig);
-        getPerformance(app);
     </script>
 </body>
 
