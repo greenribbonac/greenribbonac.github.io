@@ -85,50 +85,98 @@
         </section>
 
         <section class="top-schedule">
-            <div class="container-m schedule__flexbox">
-                <div class="block--schedule">
-                    <h3 class="mb-40"><img src="./img/top/hdg_schedule.png" srcset="./img/top/hdg_schedule@2x.png 2x" alt="活動スケジュール"></h3>
-                    <ul class="schedule__list animation-right">
-                        <li class="schedule__item">
-                            <p class="schedule__date">2022.<span class="ft-16">7</span></p>
-                            <h4 class="ft-18 mb-10">メディアワークショップ</h4>
-                            <p><b>日時</b>：2022年7月 予定</p>
-                            <p class="shcedule__note">詳細が決定次第、お知らせします。</p>
-                        </li>
-                        <!--<li class="schedule__item">
-                            <p class="schedule__date">2020.<span class="ft-16">10.16</span></p>
-                            <h4 class="ft-18 mb-10">グリーンライトアップ（共催事業）</h4>
-                            <p><b>日時</b>：2020年10月16日（金） </p>
-                            <p><b>会場</b>：大阪万博公園太陽の塔、エキスポシティ観覧車</p>
-                        </li>-->
-                        <li class="schedule__item">
-                            <p class="schedule__date">2022.<span class="ft-16">10.16</span></p>
-                            <h4 class="ft-18 mb-10">グリーンリボンパレード</h4>
+            <!-- 活動スケジュール内のリストアイテム用のカスタム要素定義 -->
+            <script type="module">
+                import { defineCustomElementWithTemplate } from "/js/defineCustomElement.mjs"
+                defineCustomElementWithTemplate({
+                    tagName: 'greenribbonac-event-summary',
+                    templateID: 'schedule-item',
+                });
+            </script>
+            <template id="schedule-item">
+                <link rel="stylesheet" href="./css/style.css">
+                <div class="schedule__item">
+                    <p class="schedule__date">
+                        <slot name="year">xxxx</slot>.<span class="ft-16"><slot name="date">xx.xx</slot></span>
+                    </p>
+                    <h4 class="ft-18 mb-10">
+                        <slot name="title">{{ title }}</slot>
+                    </h4>
+                    <slot>{{ slot }}</slot>
+                </div>
+            </template>
+
+            <!-- 活動スケジュールのカスタム要素定義 -->
+            <script type="module">
+                import { defineCustomElementWithTemplate } from "/js/defineCustomElement.mjs"
+                defineCustomElementWithTemplate({
+                    tagName: 'greenribbonac-schedule-list',
+                    templateID: 'schedule-list',
+                });
+            </script>
+            <template id="schedule-list">
+                <link rel="stylesheet" href="./css/style.css">
+                <style>
+                    li:not(:last-child) { margin-bottom: 4px }
+                </style>
+                <h3 class="mb-40"><img src="./img/top/hdg_schedule.png" srcset="./img/top/hdg_schedule@2x.png 2x" alt="活動スケジュール"></h3>
+                <ul class="schedule__list animation-right">
+                    <li>
+                        <greenribbonac-event-summary>
+                            <span slot="year">2022</span>
+                            <span slot="date">7</span>
+                            <span slot="title">メディアワークショップ</span>
+
+                            <p><b>日時</b>：2022年7月予定</p>
+                            <p class="schedule__note">詳細が決定次第、お知らせします。</p>
+                        </greenribbonac-event-summary>
+                    </li>
+                    <li>
+                        <greenribbonac-event-summary>
+                            <span slot="year">2022</span>
+                            <span slot="date">10.16</span>
+                            <span slot="title">グリーンリボンパレード</span>
+
                             <p><b>日時</b>：2022年10月16日(日)</p>
                             <p><b>会場</b>：東京都千代田区日比谷公園から東京都中央区鍛冶橋跡</p>
-                        </li>
-                        <li class="schedule__item">
-                            <p class="schedule__date">2022.<span class="ft-16">10.22-28</span></p>
-                            <h4 class="ft-18 mb-10">グリーンリボンアート展</h4>
-                            <p><b>日時</b>：2022年10月22日～10月28日 <b>会場</b>：CLiP HIROSHIMA</p>
-                        </li>
-                        <li class="schedule__item">
-                            <p class="schedule__date">2022.<span class="ft-16">10.29</span></p>
-                            <h4 class="ft-18 mb-10">ひろしまグリーンリボンフェス2022</h4>
-                            <p><b>日時</b>：2021年10月29日(土) <b>会場</b>：広島駅南口地下広場</p>
-                        </li>
-                        <li class="schedule__item">
-                            <p class="schedule__date">2022.<span class="ft-16">11</span></p>
-                            <h4 class="ft-18 mb-10">厚生労働大臣に対する要望書提出</h4>
+                        </greenribbonac-event-summary>
+                    </li>
+                    <li>
+                        <greenribbonac-event-summary>
+                            <span slot="year">2022</span>
+                            <span slot="date">10.22-28</span>
+                            <span slot="title">グリーンリボンアート展</span>
+
+                            <p><b>日時</b>：2022年10月22日～10月28日</p>
+                            <p><b>会場</b>：CLiP HIROSHIMA</p>
+                        </greenribbonac-event-summary>
+                    </li>
+                    <li>
+                        <greenribbonac-event-summary>
+                            <span slot="year">2022</span>
+                            <span slot="date">10.29</span>
+                            <span slot="title">ひろしまグリーンリボンフェス2022</span>
+
+                            <p><b>日時</b>：2021年10月29日(土)</p>
+                            <p><b>会場</b>：広島駅南口地下広場</p>
+                        </greenribbonac-event-summary>
+                    </li>
+                    <li>
+                        <greenribbonac-event-summary>
+                            <span slot="year">2022</span>
+                            <span slot="date">11</span>
+                            <span slot="title">厚生労働大臣に対する要望書提出</span>
+
                             <p><b>日時</b>：2022年11月</p>
-                            <p class="shcedule__note">※患者団体との協働</p>
-                        </li>
-                        <!--<li class="schedule__item">
-                            <p class="schedule__date"><span class="ft-16">未定</span></p>
-                            <h4 class="ft-18 mb-10">移植医療勉強会 みんなで学ぼうグリーンリボン</h4>
-                            <p><b>日時</b>：開催日未定（2回予定） <b>会場</b>：WEB開催</p>
-                        </li>-->
-                    </ul>
+                            <p class="schedule__note">※患者団体との協働</p>
+                        </greenribbonac-event-summary>
+                    </li>
+                </ul>
+            </template>
+
+            <div class="container-m schedule__flexbox">
+                <div class="block--schedule">
+                    <greenribbonac-schedule-list />
                 </div><!-- block schedule -->
                 <div class="block--news">
                     <h3 class="mb-40"><img src="./img/top/hdg_news.png" srcset="./img/top/hdg_news@2x.png 2x" alt="ニュース"></h3>
