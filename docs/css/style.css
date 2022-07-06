@@ -1807,6 +1807,10 @@ about
   }
 }
 
+.about-overview .business-report {
+  display: flex; justify-content: space-around;
+}
+
 .about-overview .business-report h1 {
   font-size: 1.2em;
 }
