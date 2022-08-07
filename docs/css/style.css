@@ -1596,6 +1596,22 @@ subpage common parts
   color: #009044;
 }
 
+.line__list_detail .person {
+    margin: 1em 1em;
+
+}
+
+.line__list_detail .title {
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.line__list_detail .subtitle {
+    font-size: 0.7em;
+    line-height: 1.5;
+}
+
+
 .inner__list_hdg{
   font-weight: bold;
   width: 100px;
