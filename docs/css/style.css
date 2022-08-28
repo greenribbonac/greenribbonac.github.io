@@ -691,6 +691,13 @@ common parts
   border-bottom: 4px dotted #009044;
 }
 
+.txt--yugo14{
+  font-size: 1.4rem;
+  color: #058A44;
+  font-weight: bold;
+  line-height: 2.25;
+}
+
 .txt--yugo18{
   font-size: 1.8rem;
   color: #058A44;
@@ -1129,6 +1136,24 @@ toppage
   right: 30px;
   bottom: 15px;
 }
+
+.top-topic {
+    margin: auto; width: 100%; font-size: 1.2em
+}
+
+.top-topic a {
+}
+
+.top-topic p {
+    margin: 1em 0.5em;
+}
+
+@media screen and (min-width: 450px) {
+    .top-topic {
+        width: 80%;
+    }
+}
+
 
 .top-schedule{
   background: url(../img/top/schedule_bkg.png) no-repeat center 89% / auto;
