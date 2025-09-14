@@ -783,11 +783,11 @@ common parts
   background: url(../img/top/schedule_date_ribbon.svg) no-repeat right / contain;
 }
 
-.shcedule__note{
+.schedule__note{
   margin-top: 10px;
 }
 
-.shcedule__note a {
+.schedule__note a {
   color: #009044;
   text-decoration: underline;
 }
