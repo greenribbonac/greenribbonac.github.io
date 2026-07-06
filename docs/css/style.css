@@ -792,6 +792,30 @@ common parts
   text-decoration: underline;
 }
 
+.schedule__branch:not(:last-of-type){
+  margin-bottom: 45px;
+}
+
+.schedule__branch_hdg{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #058A44;
+  border-left: 6px solid #009044;
+  padding-left: 14px;
+  margin-bottom: 20px;
+}
+
+.schedule__attention{
+  margin-top: 30px;
+  padding: 15px 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #009044;
+  background-color: #F4FBF4;
+  border-radius: 10px;
+  line-height: 1.8;
+}
+
 .bkg--white_dots{
   background: url(../img/common/bkg_dots_white.png) repeat top left;
     padding: 130px 0;
