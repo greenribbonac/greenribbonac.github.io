@@ -14,7 +14,7 @@ const sponsorAlist: SponsorCategory[] = categories.map(category => {
     }
     return acc;
   }, { category: category, sponsors: [] });
-});
+}).filter(c => c.sponsors.length > 0);
 
 
 const html = renderToStaticMarkup(<SponsorBlock sponsorAlist={sponsorAlist} />);
